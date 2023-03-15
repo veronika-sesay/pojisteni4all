@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --sherwood-green: #044434;
+  --peppermint: #e8f8e5;
+  --apple: #45b22d;
+  --de-york: #87c17c;
+  --cascade: #90b0a9;
+  --feijoa: #a4d994;
+  --vida-loca: #3cb423;
+  --viridian-green: #5b8475;
+  --mantis: #68c455;
+}
+
+.container {
+  max-width: 26rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.logo {
+  width: 10rem;
+  height: 10rem;
+  background-image: url(./img/rocket.svg);
+  background-size: contain;
+}
