@@ -1,0 +1,14 @@
+header {
+  background-color: var(--peppermint);
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+
+h1 {
+  color: var(--sherwood-green);
+}
+
+#logo {
+  max-width: 20%;
+}
