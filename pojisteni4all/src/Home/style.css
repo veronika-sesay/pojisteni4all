@@ -1,0 +1,104 @@
+.aboutus {
+  background: linear-gradient(var(--peppermint) 20%, white);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.aboutus_image {
+  margin: 0 7%;
+  border-radius: 15px;
+  background-color: transparent;
+}
+
+.aboutus_text {
+  flex: 1 0 50%;
+  margin: 0% 5% 5% 0;
+}
+
+#image1 {
+  display: block;
+  align-self: center;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.insurance {
+  margin: 5%;
+}
+
+.insurance_heading {
+  margin-top: 5%;
+  margin-left: 3%;
+}
+
+.insurance-container {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto auto auto;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+}
+
+.insurance_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+  background-color: var(--viridian-green);
+  color: white;
+  padding: 2%;
+  border-radius: 5px;
+  height: 9rem;
+}
+
+@media (max-width: 540px) {
+  .insurance_heading {
+    margin-left: 5%;
+  }
+  .insurance-container {
+    grid-template-columns: 90%;
+  }
+
+  .insurance_item {
+    font-size: 0.75rem;
+    font-weight: 400;
+    height: 2rem;
+    margin: 2% 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutus {
+    flex-direction: column;
+  }
+  .aboutus_image {
+    margin: 0 7%;
+  }
+  .aboutus_text {
+    margin: 0% 5%;
+    text-align: center;
+  }
+  #image1 {
+    max-width: 90%;
+    margin: auto;
+  }
+  .insurance_item {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .aboutus {
+    background: linear-gradient(var(--peppermint) 40%, white);
+  }
+  .aboutus_text {
+    margin-top: 1%;
+  }
+  .insurance_item {
+    font-size: 1.75rem;
+  }
+}

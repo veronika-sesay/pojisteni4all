@@ -12,6 +12,28 @@ body {
   margin: 0;
 }
 
+h1,
+h2 {
+  color: var(--sherwood-green);
+  text-align: center;
+}
+
+h3 {
+  color: var(--nandor);
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+a {
+  text-decoration: none;
+  color: var(--sherwood-green);
+  font-weight: 500;
+}
+
 :root {
   --sherwood-green: #044434;
   /* --peppermint: #e8f8e5; */
@@ -24,4 +46,32 @@ body {
   --viridian-green: #5b8475;
   --mantis: #68c455;
   --text: #171917;
+  --nandor: #485855;
+}
+
+.divider {
+  border-top: 1px solid var(--cascade);
+  border-radius: 5px;
+  margin: 2%;
+}
+
+@media (max-width: 540px) {
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  p {
+    font-size: 20px;
+  }
 }

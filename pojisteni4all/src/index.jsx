@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { Navigation } from './Navigation';
 import { Home } from './Home';
 import './style.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
         <Navigation />
       </header>
       <main>
-        <Home />
+        <Outlet />
       </main>
       <footer>
         <p>Veronika Sesay</p>

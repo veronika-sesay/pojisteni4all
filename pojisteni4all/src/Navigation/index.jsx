@@ -21,16 +21,16 @@ export const Navigation = () => {
               navOpen ? 'nav-mobile' : 'nav-mobile nav-mobile--closed '
             }
           >
-            <HashLink onClick={closeNav} to="/home#pojisteni">
+            <HashLink onClick={closeNav} to="/home#insurance">
               Druhy pojištění
             </HashLink>
-            <HashLink onClick={closeNav} to="/home#partneri">
+            <HashLink onClick={closeNav} to="/home#partners">
               Smluvní partneři
             </HashLink>
-            <HashLink onClick={closeNav} to="/home#likvidace">
+            <HashLink onClick={closeNav} to="/home#assistance">
               Likvidace událostí
             </HashLink>
-            <HashLink onClick={closeNav} to="/home#kontakty">
+            <HashLink onClick={closeNav} to="/home#contacts">
               Kontakty
             </HashLink>
           </div>
@@ -39,19 +39,16 @@ export const Navigation = () => {
       <div className="menu">
         <img className="logo" src={Logo} alt="logo" />
         <nav>
-          <HashLink smooth to="/home#onas">
-            O nás
-          </HashLink>
-          <HashLink smooth to="/home#pojisteni">
+          <HashLink smooth to="/home#insurance">
             Druhy pojištění
           </HashLink>
-          <HashLink smooth to="/home#partneri">
+          <HashLink smooth to="/home#partners">
             Smluvní partneři
           </HashLink>
-          <HashLink smooth to="/home#likvidace">
+          <HashLink smooth to="/home#assistance">
             Likvidace událostí
           </HashLink>
-          <HashLink smooth to="/home#kontakty">
+          <HashLink smooth to="/home#contacts">
             Kontakty
           </HashLink>
         </nav>
