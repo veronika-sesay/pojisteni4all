@@ -66,6 +66,10 @@ export const Home = () => {
         </p>
       </div>
       <div id="onas">O nás</div>
+      <div id="pojisteni">Druhy pojištění</div>
+      <div id="partneri">Smluvní partneři</div>
+      <div id="likvidace">Likvidace událostí</div>
+      <div id="kontakty">Kontakty</div>
     </>
   );
 };

@@ -9,6 +9,125 @@ h1 {
   color: var(--sherwood-green);
 }
 
-#logo {
-  max-width: 20%;
+.mobile-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  max-width: 30%;
+  height: auto;
+}
+
+.mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  flex-basis: 30%;
+}
+
+.nav-btn {
+  width: 2rem;
+  height: 2rem;
+  background-image: url('/src/img/Hamburger_icon.png');
+  background-color: transparent;
+  background-size: contain;
+  margin: 1rem 1rem 0.5rem 0;
+  cursor: pointer;
+  border-style: none;
+  border-color: none;
+  border-width: 0;
+}
+
+.nav-mobile {
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-mobile a {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--sherwood-green);
+  text-decoration: none;
+  margin-bottom: 3%;
+  z-index: 99;
+}
+
+.nav-mobile a:hover,
+.nav-mobile a:active,
+.nav-mobile a:focus {
+  font-size: 0.8rem;
+  border-bottom: 1px solid var(--viridian-green);
+}
+
+.nav-mobile--closed {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 60%;
+  align-items: end;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+
+nav a {
+  flex: 0 1 20%;
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--sherwood-green);
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  font-size: 1.3rem;
+  border-bottom: 2px solid var(--viridian-green);
+}
+
+nav a:active,
+nav a:focus {
+  border-bottom: 1px solid var(--viridian-green);
+  font-size: 1.3rem;
+}
+
+@media (max-width: 540px) {
+  .menu {
+    display: none;
+  }
+  .logo {
+    max-width: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav a {
+    font-size: 1rem;
+  }
+  nav a:hover {
+    font-size: 1.1rem;
+  }
+  nav a:active,
+  nav a:focus {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 540px) {
+  .mobile-menu {
+    display: none;
+  }
 }

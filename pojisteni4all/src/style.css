@@ -14,7 +14,8 @@ body {
 
 :root {
   --sherwood-green: #044434;
-  --peppermint: #e8f8e5;
+  /* --peppermint: #e8f8e5; */
+  --peppermint: #f8fdf7;
   --apple: #45b22d;
   --de-york: #87c17c;
   --cascade: #90b0a9;
@@ -22,4 +23,5 @@ body {
   --vida-loca: #3cb423;
   --viridian-green: #5b8475;
   --mantis: #68c455;
+  --text: #171917;
 }
