@@ -2,6 +2,8 @@ import React from 'react';
 import './style.css';
 import Aboutus from '../img/aboutus.jpg';
 import { HashLink } from 'react-router-hash-link';
+import Partners from '../img/partners.jpg';
+import Arrow from '../img/arrow.png';
 
 export const Home = () => {
   return (
@@ -9,9 +11,9 @@ export const Home = () => {
       <div className="aboutus" id="aboutus">
         <div className="aboutus_image">
           <img id="image1" src={Aboutus} alt="Tým" />
-          <h2>O nás</h2>
         </div>
         <div className="aboutus_text">
+          <h2>O nás</h2>
           <p>
             Jsme malý kolektiv, kde upřednostňujeme osobní a individuální
             přístup ke klientům a sjednání pojištění dle nároků, požadavků a
@@ -53,11 +55,28 @@ export const Home = () => {
         </div>
       </div>
       <hr className="divider" />
-      <div id="partners">Smluvní partneři</div>
+      <div className="partners" id="partners">
+        <h2>Smluvní partneři</h2>
+        <div className="partners-flex">
+          <div className="partners-container">
+            <p className="partners_item">Kooperativa, pojišťovna a.s.</p>
+            <p className="partners_item">ČPP, pojišťovna a.s.</p>
+            <p className="partners_item">Generali</p>
+            <p className="partners_item">Uniqa</p>
+            <p className="partners_item">Allianz</p>
+          </div>
+          <div className="partners-image-container">
+            <img id="image2" src={Partners} alt="Partneři" />
+          </div>
+        </div>
+      </div>
       <hr className="divider" />
       <div id="assistance">Likvidace událostí</div>
       <hr className="divider" />
       <div id="contacts">Kontakty</div>
+      <HashLink smooth to="/home#top">
+        <img id="arrow" src={Arrow} alt="" />
+      </HashLink>
     </>
   );
 };
