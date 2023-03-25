@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 import Aboutus from '../img/aboutus.jpg';
 import { HashLink } from 'react-router-hash-link';
-import Partners from '../img/partners.jpg';
+import Partners from '../img/partners.png';
 import Arrow from '../img/arrow.png';
 
 export const Home = () => {
@@ -57,17 +57,15 @@ export const Home = () => {
       <hr className="divider" />
       <div className="partners" id="partners">
         <h2>Smluvní partneři</h2>
-        <div className="partners-flex">
-          <div className="partners-container">
-            <p className="partners_item">Kooperativa, pojišťovna a.s.</p>
-            <p className="partners_item">ČPP, pojišťovna a.s.</p>
-            <p className="partners_item">Generali</p>
-            <p className="partners_item">Uniqa</p>
-            <p className="partners_item">Allianz</p>
-          </div>
-          <div className="partners-image-container">
-            <img id="image2" src={Partners} alt="Partneři" />
-          </div>
+        <div className="partners-image">
+          <img id="image2" src={Partners} alt="Partneři"></img>
+        </div>
+        <div className="partners-container">
+          <p className="partners_item">Kooperativa, pojišťovna a.s.</p>
+          <p className="partners_item">ČPP, pojišťovna a.s.</p>
+          <p className="partners_item">Generali</p>
+          <p className="partners_item">Uniqa</p>
+          <p className="partners_item">Allianz</p>
         </div>
       </div>
       <hr className="divider" />
