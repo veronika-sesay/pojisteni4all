@@ -3,6 +3,7 @@ import './style.css';
 import Aboutus from '../img/aboutus.jpg';
 import { HashLink } from 'react-router-hash-link';
 import Partners from '../img/partners.png';
+import Assistance from '../img/assistance.png';
 import Arrow from '../img/arrow.png';
 
 export const Home = () => {
@@ -57,7 +58,7 @@ export const Home = () => {
       <hr className="divider" />
       <div className="partners" id="partners">
         <h2>Smluvní partneři</h2>
-        <div className="partners-image">
+        <div className="partners_image">
           <img id="image2" src={Partners} alt="Partneři"></img>
         </div>
         <div className="partners-container">
@@ -69,7 +70,28 @@ export const Home = () => {
         </div>
       </div>
       <hr className="divider" />
-      <div id="assistance">Likvidace událostí</div>
+      <div className="assistance" id="assistance">
+        <h2>Likvidace událostí</h2>
+        <div className="assistance-container">
+          <div className="assistance_text">
+            <p>
+              Rádi vám pomůžeme při nahlášení škod, pošleme doklady ke škodám,
+              před nahlášením škody můžeme prokonzultovat. Naše dlouhodobé
+              zkušenosti vám mohou být přínosné.
+            </p>
+            <p>
+              Pro nahlášení škod klikněte na{' '}
+              <HashLink smooth to="/home#contacts">
+                kontakty.
+              </HashLink>{' '}
+            </p>
+          </div>
+          <div className="assistance_image">
+            <img id="image3" src={Assistance} alt="Likvidace událostí" />
+          </div>
+        </div>
+      </div>
+
       <hr className="divider" />
       <div id="contacts">Kontakty</div>
       <HashLink smooth to="/home#top">

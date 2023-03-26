@@ -59,8 +59,8 @@
   margin: 0 5%;
 }
 
-.partners-image {
-  max-height: 30%;
+.partners_image {
+  max-height: 15%;
   border-radius: 5px;
   margin: 2% 2% 5% 2%;
 }
@@ -71,7 +71,6 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   text-align: center;
-
   font-weight: 600;
   line-height: 1.5;
 }
@@ -85,6 +84,29 @@
   max-height: 100%;
   object-fit: contain;
   opacity: 0.8;
+}
+
+.assistance {
+  margin: 0 5%;
+}
+
+.assistance-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image3 {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.assistance_text {
+  padding: 5%;
 }
 
 #arrow {
