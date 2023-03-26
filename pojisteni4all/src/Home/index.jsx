@@ -1,13 +1,12 @@
 import React from 'react';
 import './style.css';
 import { HashLink } from 'react-router-hash-link';
-import { Link } from 'react-router-dom';
 import Aboutus from '../img/aboutus.jpg';
 import Partners from '../img/partners.png';
 import Assistance from '../img/assistance.png';
 import emailIcon from '../img/email_icon.svg';
 import phoneIcon from '../img/phone_icon.svg';
-import Arrow from '../img/arrow.png';
+import Arrow from '../img/arrow.svg';
 import { Contact } from './Contact';
 
 export const Home = () => {
@@ -129,9 +128,11 @@ export const Home = () => {
           />
         </div>
       </div>
-      <HashLink smooth to="/home#top">
-        <img id="arrow" src={Arrow} alt="" />
-      </HashLink>
+      <div className="arrow">
+        <HashLink smooth to="/home#top">
+          <img id="arrow" src={Arrow} alt="Zpět nahoru" />
+        </HashLink>
+      </div>
     </>
   );
 };

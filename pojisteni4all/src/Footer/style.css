@@ -1,0 +1,13 @@
+.footer {
+  background-color: var(--sherwood-green);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 3%;
+}
+
+.footer p {
+  color: white;
+  font-size: 0.75rem;
+  margin: 0;
+}

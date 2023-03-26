@@ -4,6 +4,7 @@ import { Navigation } from './Navigation';
 import { Home } from './Home';
 import './style.css';
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
+import { Footer } from './Footer';
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
         <Outlet />
       </main>
       <footer>
-        <p>Veronika Sesay</p>
+        <Footer />
       </footer>
     </div>
   );
