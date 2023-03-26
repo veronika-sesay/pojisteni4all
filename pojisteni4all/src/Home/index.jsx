@@ -1,10 +1,14 @@
 import React from 'react';
 import './style.css';
-import Aboutus from '../img/aboutus.jpg';
 import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
+import Aboutus from '../img/aboutus.jpg';
 import Partners from '../img/partners.png';
 import Assistance from '../img/assistance.png';
+import emailIcon from '../img/email_icon.svg';
+import phoneIcon from '../img/phone_icon.svg';
 import Arrow from '../img/arrow.png';
+import { Contact } from './Contact';
 
 export const Home = () => {
   return (
@@ -91,9 +95,40 @@ export const Home = () => {
           </div>
         </div>
       </div>
-
       <hr className="divider" />
-      <div id="contacts">Kontakty</div>
+      <div id="contacts">
+        <h2>Kontakty</h2>
+        <div className="contacts-container">
+          <Contact
+            phoneIcon={phoneIcon}
+            emailIcon={emailIcon}
+            name="Michael Petr"
+            phone="+420 775 666 161"
+            email="michaelpetr@seznam.cz"
+          />
+          <Contact
+            phoneIcon={phoneIcon}
+            emailIcon={emailIcon}
+            name="Jana Petrová"
+            phone="+420 775 778 817"
+            email="petrova.jana1@seznam.cz"
+          />
+          <Contact
+            phoneIcon={phoneIcon}
+            emailIcon={emailIcon}
+            name="Ivana Himpanová"
+            phone="+420 774 665 576"
+            email="michaelpetr@seznam.cz"
+          />
+          <Contact
+            phoneIcon={phoneIcon}
+            emailIcon={emailIcon}
+            name="Václav Laňka"
+            phone="+420 775 374 191"
+            email="vaclavlanka@seznam.cz"
+          />
+        </div>
+      </div>
       <HashLink smooth to="/home#top">
         <img id="arrow" src={Arrow} alt="" />
       </HashLink>
