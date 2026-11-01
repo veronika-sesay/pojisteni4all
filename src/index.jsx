@@ -23,7 +23,9 @@ const App = () => {
 };
 
 createRoot(document.querySelector('#app')).render(
-  <BrowserRouter>
+  <BrowserRouter
+    basename={process.env.NODE_ENV === 'production' ? '/pojisteni4all' : '/'}
+  >
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
